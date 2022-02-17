@@ -1,0 +1,17 @@
+<div class="p-5 h-screen w-full text-white text-2xl bg-blue-800">
+  <p class="mb-3 font-semibold">Dragon Ball Z</p>
+
+  <hr class="mb-5" />
+
+  <div class="flex justify-around flex-col md:flex-row gap-10">
+    <div class="flex-1">
+      <app-personajes ></app-personajes>
+    </div>
+    <!-- <div class="h-60 border mx-5"></div> -->
+    <div class="flex-1">
+      <app-agregar
+       [personaje]="personaje"
+       ></app-agregar>
+    </div>
+  </div>
+</div>

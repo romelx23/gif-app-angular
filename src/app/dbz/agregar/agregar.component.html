@@ -1,0 +1,26 @@
+<h3 class="my-3">Agregar {{ personaje.nombre }}</h3>
+<hr />
+<form (ngSubmit)="agregar()">
+  <div class="flex flex-col gap-3 mt-3">
+    <input
+      type="text"
+      placeholder="Nombre"
+      name="Nombre"
+      [(ngModel)]="personaje.nombre"
+      class="rounded-lg py-2 px-3 text-lg text-black"
+    />
+    <input
+      type="number"
+      placeholder="Poder"
+      name="Poder"
+      [(ngModel)]="personaje.poder"
+      class="rounded-lg py-2 px-3 text-lg text-black"
+    />
+    <button
+      type="submit"
+      class="bg-purple-500 rounded-lg py-2 hover:bg-purple-700"
+    >
+      Agregar
+    </button>
+  </div>
+</form>

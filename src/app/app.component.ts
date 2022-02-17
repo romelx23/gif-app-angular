@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gif-app';
+  toggle=false;
+  //toggle mode dark
+  toggleMode(){
+    this.toggle=!this.toggle;
+  }
 }

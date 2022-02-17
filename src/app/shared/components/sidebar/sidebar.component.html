@@ -1,0 +1,25 @@
+<div class="w-auto h-auto bg-blue-900 pt-4 sm:pt-8 px-6 flex flex-col sm:h-screen sm:w-64">
+    <div class="flex items-center gap-5 pb-3">
+        <h1 class="text-white font-semibold text-2xl">Gifs - App</h1>
+    <img src="https://giphy.com/static/img/giphy-be-animated-logo.gif" alt="logo" class="w-14 h-14">
+    </div>
+    <hr />
+    <div class="w-full flex flex-row flex-wrap sm:flex-col gap-1 place-content-center mt-3">
+      <!-- <a
+        href="#"
+        class="flex items-center px-5 h-11 bg-white text-black font-semibold  mb-3 rounded-3xl hover:bg-gray-600 transition hover:text-white text-sm w-auto sm:text-xl sm:w-full"
+      >
+        <h2>Dashboard</h2>
+      </a> -->
+      <a
+      *ngFor="let item of getAfterTen()"
+      (click)="buscar(item)"
+        href="#"
+        class="flex items-center px-5 h-11 bg-white text-black font-semibold  mb-3 rounded-3xl hover:bg-gray-600 transition hover:text-white text-sm w-auto sm:text-xl sm:w-full"
+      >
+        <h2>{{item | titlecase }}</h2>
+      </a>
+      
+      
+    </div>
+  </div>

@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// .entryleft{
+//     animation: translateX 1s ease-in-out;
+// }
+// .entryrigth{
+//     animation: translateXleft 1s ease-in-out;
+// }
+
+// // animation translate x
+// @keyframes translateX {
+//     0% {
+//         transform: translateX(2rem);
+//     }
+//     100% {
+//         transform: translateX(0);
+//     }
+// }
+// @keyframes translateXleft {
+//     0% {
+//         transform: translateX(-2rem);
+//     }
+//     100% {
+//         transform: translateX(0);
+//     }
+// }

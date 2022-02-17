@@ -1,0 +1,10 @@
+<h3 class="my-3">Personajes</h3>
+<hr />
+<ul class="ml-16 mt-2">
+  <!-- <li class="list-disc">Krillin-700</li>
+        <li class="list-disc">Goku-1500</li>
+        <li class="list-disc">Vegeta</li> -->
+  <li *ngFor="let personaje of personajes" class="list-disc">
+    {{ personaje.nombre }} - {{ personaje.poder | number }}
+  </li>
+</ul>
