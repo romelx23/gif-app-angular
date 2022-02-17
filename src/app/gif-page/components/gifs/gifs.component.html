@@ -1,12 +1,20 @@
-<!-- <p class="text-white text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit doloribus quidem distinctio. Corporis iste delectus vel atque inventore, illum porro! Laboriosam, sunt!</p> -->
+<!-- <p lass="text-white text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit doloribus quidem distinctio. Corporis iste delectus vel atque inventore, illum porro! Laboriosam, sunt!</p> -->
 <div class="gap-5 columns-sm animate__animated animate__fadeIn">
-    <div *ngFor="let gif of resultados" class="text-white mb-5">
-        <img [src]="gif.images.downsized_medium.url" alt="gif">
-        <h3 class="font-semibold">{{gif.title}}</h3>
-        <h3 class="font-semibold">{{gif.slug}}</h3>
-        <hr>
-    </div>
-    <ng-template #name>
-        
-    </ng-template>
+  <div *ngFor="let gif of resultados" class="text-white mb-5">
+    <img [src]="gif.images.downsized_medium.url" alt="gif" />
+    <h3 class="font-semibold">{{ gif.title }}</h3>
+    <h3 class="font-semibold">{{ gif.slug }}</h3>
+    <hr />
+  </div>
+  <ng-template #name> </ng-template>
 </div>
+<div
+  class="search-results"
+  infiniteScroll
+  [infiniteScrollDistance]="0"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="onSroll()"
+></div>
+<ng-template #loader>
+        
+</ng-template>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { GifPageComponent } from './pages/gif-page/gif-page.component';
 import { SearchComponent } from './components/search/search.component';
 import { GifsComponent } from './components/gifs/gifs.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -10,13 +11,14 @@ import { GifsComponent } from './components/gifs/gifs.component';
   declarations: [
     GifPageComponent,
     SearchComponent,
-    GifsComponent
+    GifsComponent,
   ],
   exports:[
     GifPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    InfiniteScrollModule
   ]
 })
 export class GifPageModule { }
